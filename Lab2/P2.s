@@ -47,7 +47,7 @@ compare:
     mov $6, %edx
     int $0x80
 
-    jmp exit
+    jmp etexit
 
 failed:
     mov $4, %eax
@@ -56,7 +56,7 @@ failed:
     mov $6, %edx
     int $0x80
 
-exit:
+etexit:
     mov $1, %eax
     mov $0, %ebx
     int $0x80

@@ -43,7 +43,7 @@ notPrime:
     mov $isNotPrime, %ecx
     mov $25, %edx
     int $0x80
-    jmp exit
+    jmp etexit
 
 prime:
     mov $4, %eax
@@ -52,7 +52,7 @@ prime:
     mov $21, %edx
     int $0x80
 
-exit:
+etexit:
     mov $1, %eax
     mov $0, %ebx
     int $0x80

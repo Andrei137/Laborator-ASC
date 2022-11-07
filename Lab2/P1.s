@@ -39,7 +39,7 @@ v2:
     add prod2, %eax
     mov %eax, rez2
 
-exit:
+etexit:
     mov $1, %eax
     mov $0, %ebx
     int $0x80
