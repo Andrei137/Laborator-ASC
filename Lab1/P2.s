@@ -16,7 +16,7 @@ write:
     mov $12, %edx
     int $0x80
     
-exit:
+etexit:
     mov $1, %eax
     mov $0, %ebx
     int $0x80
